@@ -1,13 +1,15 @@
-package exercicios.length;
+package exercicios.inspecao_validacao.length;
+
+import util.Cronometro;
 
 /**
- * Exercicio 03 — length()
+ * Exercicio 03 - length()
  *
  * Enunciado:
  * Implemente `maisLonga` que recebe duas Strings e retorna a que
  * tiver mais caracteres. Se tiverem o mesmo tamanho, retorne a primeira.
  *
- * Restrição: use apenas length(). Sem loops.
+ * Restricao: use apenas length(). Sem loops.
  */
 public class Exercicio03 {
 
@@ -18,25 +20,34 @@ public class Exercicio03 {
 
     public static void main(String[] args) {
 
+        // Teste 1 - "Python"(6) > "Java"(4) -> segunda e maior
+        Cronometro.iniciar();
         String r1 = maisLonga("Java", "Python");
-        String r2 = maisLonga("JavaScript", "Go");
-        String r3 = maisLonga("Java", "Rust");
-        String r4 = maisLonga("", "Kotlin");
-        String r5 = maisLonga("", "");
-
-        // Teste 1 — "Python"(6) > "Java"(4) → segunda é maior
         System.out.printf("Teste 1 | Esperado: %-12s | Obtido: %-12s | %s%n", "Python",     r1, "Python".equals(r1)     ? "PASSOU" : "FALHOU");
+        Cronometro.parar();
 
-        // Teste 2 — "JavaScript"(10) > "Go"(2) → primeira é maior
+        // Teste 2 - "JavaScript"(10) > "Go"(2) -> primeira e maior
+        Cronometro.iniciar();
+        String r2 = maisLonga("JavaScript", "Go");
         System.out.printf("Teste 2 | Esperado: %-12s | Obtido: %-12s | %s%n", "JavaScript", r2, "JavaScript".equals(r2) ? "PASSOU" : "FALHOU");
+        Cronometro.parar();
 
-        // Teste 3 — "Java"(4) == "Rust"(4) → mesmo tamanho, retorna primeira
+        // Teste 3 - "Java"(4) == "Rust"(4) -> mesmo tamanho, retorna primeira
+        Cronometro.iniciar();
+        String r3 = maisLonga("Java", "Rust");
         System.out.printf("Teste 3 | Esperado: %-12s | Obtido: %-12s | %s%n", "Java",       r3, "Java".equals(r3)       ? "PASSOU" : "FALHOU");
+        Cronometro.parar();
 
-        // Teste 4 — ""(0) < "Kotlin"(6) → segunda é maior
+        // Teste 4 - ""(0) < "Kotlin"(6) -> segunda e maior
+        Cronometro.iniciar();
+        String r4 = maisLonga("", "Kotlin");
         System.out.printf("Teste 4 | Esperado: %-12s | Obtido: %-12s | %s%n", "Kotlin",     r4, "Kotlin".equals(r4)     ? "PASSOU" : "FALHOU");
+        Cronometro.parar();
 
-        // Teste 5 — ""(0) == ""(0) → mesmo tamanho, retorna primeira
+        // Teste 5 - ""(0) == ""(0) -> mesmo tamanho, retorna primeira
+        Cronometro.iniciar();
+        String r5 = maisLonga("", "");
         System.out.printf("Teste 5 | Esperado: %-12s | Obtido: %-12s | %s%n", "(vazia)",    r5, "".equals(r5)           ? "PASSOU" : "FALHOU");
+        Cronometro.parar();
     }
 }

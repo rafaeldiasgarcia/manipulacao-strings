@@ -1,13 +1,13 @@
-package exercicios.isempty_isblank;
+package exercicios.inspecao_validacao.isempty_isblank;
+
+import util.Cronometro;
 
 /**
- * Exercicio 01 — isEmpty() e isBlank()
+ * Exercicio 01 - isEmpty() e isBlank()
  *
  * Enunciado:
  * Implemente `campoPreenchido` que recebe uma String e retorna true
- * se o campo tiver conteúdo real (não nulo, não vazio, não só espaços).
- *
- * Trate o caso null antes de chamar qualquer método.
+ * se o campo tiver conteudo real (nao nulo, nao vazio, nao so espacos).
  */
 public class Exercicio01 {
 
@@ -20,25 +20,34 @@ public class Exercicio01 {
 
     public static void main(String[] args) {
 
+        // Teste 1 - texto normal -> preenchido
+        Cronometro.iniciar();
         boolean r1 = campoPreenchido("Rafael");
-        boolean r2 = campoPreenchido("");
-        boolean r3 = campoPreenchido("   ");
-        boolean r4 = campoPreenchido(null);
-        boolean r5 = campoPreenchido("  Java  ");
-
-        // Teste 1 — texto normal → preenchido
         System.out.printf("Teste 1 | Esperado: %-5s | Obtido: %-5s | %s%n", "true",  r1,  r1 ? "PASSOU" : "FALHOU");
+        Cronometro.parar();
 
-        // Teste 2 — string vazia → não preenchido
+        // Teste 2 - string vazia -> nao preenchido
+        Cronometro.iniciar();
+        boolean r2 = campoPreenchido("");
         System.out.printf("Teste 2 | Esperado: %-5s | Obtido: %-5s | %s%n", "false", r2, !r2 ? "PASSOU" : "FALHOU");
+        Cronometro.parar();
 
-        // Teste 3 — só espaços → não preenchido
+        // Teste 3 - so espacos -> nao preenchido
+        Cronometro.iniciar();
+        boolean r3 = campoPreenchido("   ");
         System.out.printf("Teste 3 | Esperado: %-5s | Obtido: %-5s | %s%n", "false", r3, !r3 ? "PASSOU" : "FALHOU");
+        Cronometro.parar();
 
-        // Teste 4 — null → não preenchido
+        // Teste 4 - null -> nao preenchido
+        Cronometro.iniciar();
+        boolean r4 = campoPreenchido(null);
         System.out.printf("Teste 4 | Esperado: %-5s | Obtido: %-5s | %s%n", "false", r4, !r4 ? "PASSOU" : "FALHOU");
+        Cronometro.parar();
 
-        // Teste 5 — espaços nas bordas mas tem conteúdo → preenchido
+        // Teste 5 - espacos nas bordas mas tem conteudo -> preenchido
+        Cronometro.iniciar();
+        boolean r5 = campoPreenchido("  Java  ");
         System.out.printf("Teste 5 | Esperado: %-5s | Obtido: %-5s | %s%n", "true",  r5,  r5 ? "PASSOU" : "FALHOU");
+        Cronometro.parar();
     }
 }
