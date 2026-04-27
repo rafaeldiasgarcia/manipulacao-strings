@@ -17,24 +17,26 @@ public class Exercicio03 {
     }
 
     public static void main(String[] args) {
-        // Teste 1 — segunda é maior
+
         String r1 = maisLonga("Java", "Python");
-        System.out.println("Teste 1 | Esperado: Python    | Obtido: " + r1 + " | " + ("Python".equals(r1) ? "PASSOU" : "FALHOU"));
-
-        // Teste 2 — primeira é maior
         String r2 = maisLonga("JavaScript", "Go");
-        System.out.println("Teste 2 | Esperado: JavaScript | Obtido: " + r2 + " | " + ("JavaScript".equals(r2) ? "PASSOU" : "FALHOU"));
-
-        // Teste 3 — mesmo tamanho, retorna a primeira
         String r3 = maisLonga("Java", "Rust");
-        System.out.println("Teste 3 | Esperado: Java       | Obtido: " + r3 + " | " + ("Java".equals(r3) ? "PASSOU" : "FALHOU"));
-
-        // Teste 4 — primeira é vazia
         String r4 = maisLonga("", "Kotlin");
-        System.out.println("Teste 4 | Esperado: Kotlin     | Obtido: " + r4 + " | " + ("Kotlin".equals(r4) ? "PASSOU" : "FALHOU"));
-
-        // Teste 5 — ambas vazias, retorna a primeira
         String r5 = maisLonga("", "");
-        System.out.println("Teste 5 | Esperado: (vazia)    | Obtido: '" + r5 + "' | " + ("".equals(r5) ? "PASSOU" : "FALHOU"));
+
+        // Teste 1 — "Python"(6) > "Java"(4) → segunda é maior
+        System.out.printf("Teste 1 | Esperado: %-12s | Obtido: %-12s | %s%n", "Python",     r1, "Python".equals(r1)     ? "PASSOU" : "FALHOU");
+
+        // Teste 2 — "JavaScript"(10) > "Go"(2) → primeira é maior
+        System.out.printf("Teste 2 | Esperado: %-12s | Obtido: %-12s | %s%n", "JavaScript", r2, "JavaScript".equals(r2) ? "PASSOU" : "FALHOU");
+
+        // Teste 3 — "Java"(4) == "Rust"(4) → mesmo tamanho, retorna primeira
+        System.out.printf("Teste 3 | Esperado: %-12s | Obtido: %-12s | %s%n", "Java",       r3, "Java".equals(r3)       ? "PASSOU" : "FALHOU");
+
+        // Teste 4 — ""(0) < "Kotlin"(6) → segunda é maior
+        System.out.printf("Teste 4 | Esperado: %-12s | Obtido: %-12s | %s%n", "Kotlin",     r4, "Kotlin".equals(r4)     ? "PASSOU" : "FALHOU");
+
+        // Teste 5 — ""(0) == ""(0) → mesmo tamanho, retorna primeira
+        System.out.printf("Teste 5 | Esperado: %-12s | Obtido: %-12s | %s%n", "(vazia)",    r5, "".equals(r5)           ? "PASSOU" : "FALHOU");
     }
 }

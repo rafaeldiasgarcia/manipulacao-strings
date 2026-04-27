@@ -13,28 +13,30 @@ public class Exercicio01 {
 
     public static int contarCaracteres(String texto) {
 
-       return texto.length();
+        return texto.length();
     }
 
     public static void main(String[] args) {
-        // Teste 1 — palavra simples
+
         int r1 = contarCaracteres("Java");
-        System.out.println("Teste 1 | Esperado: 4  | Obtido: " + r1 + " | " + (r1 == 4 ? "PASSOU" : "FALHOU"));
-
-        // Teste 2 — string vazia
         int r2 = contarCaracteres("");
-        System.out.println("Teste 2 | Esperado: 0  | Obtido: " + r2 + " | " + (r2 == 0 ? "PASSOU" : "FALHOU"));
-
-        // Teste 3 — frase com espaço
         int r3 = contarCaracteres("Ola Mundo");
-        System.out.println("Teste 3 | Esperado: 9  | Obtido: " + r3 + " | " + (r3 == 9 ? "PASSOU" : "FALHOU"));
-
-        // Teste 4 — apenas um espaço (espaço conta como caractere)
         int r4 = contarCaracteres(" ");
-        System.out.println("Teste 4 | Esperado: 1  | Obtido: " + r4 + " | " + (r4 == 1 ? "PASSOU" : "FALHOU"));
-
-        // Teste 5 — número como string
         int r5 = contarCaracteres("12345");
-        System.out.println("Teste 5 | Esperado: 5  | Obtido: " + r5 + " | " + (r5 == 5 ? "PASSOU" : "FALHOU"));
+
+        // Teste 1 — palavra simples → "Java" tem 4 chars
+        System.out.printf("Teste 1 | Esperado: %-4d | Obtido: %-4d | %s%n", 4, r1, r1 == 4 ? "PASSOU" : "FALHOU");
+
+        // Teste 2 — string vazia → 0
+        System.out.printf("Teste 2 | Esperado: %-4d | Obtido: %-4d | %s%n", 0, r2, r2 == 0 ? "PASSOU" : "FALHOU");
+
+        // Teste 3 — frase com espaço → espaço conta como caractere
+        System.out.printf("Teste 3 | Esperado: %-4d | Obtido: %-4d | %s%n", 9, r3, r3 == 9 ? "PASSOU" : "FALHOU");
+
+        // Teste 4 — só espaço → 1
+        System.out.printf("Teste 4 | Esperado: %-4d | Obtido: %-4d | %s%n", 1, r4, r4 == 1 ? "PASSOU" : "FALHOU");
+
+        // Teste 5 — número como string → 5
+        System.out.printf("Teste 5 | Esperado: %-4d | Obtido: %-4d | %s%n", 5, r5, r5 == 5 ? "PASSOU" : "FALHOU");
     }
 }

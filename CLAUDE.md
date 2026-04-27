@@ -55,7 +55,8 @@ java -cp out exercicios.length.Exercicio01
 ## Progresso atual
 
 - `length()` — **concluído** (Exercicio01 a 05 resolvidos)
-- `isEmpty()` / `isBlank()` — **em andamento** (Exercicio01 criado, aguardando solução)
+- `isEmpty()` / `isBlank()` — **concluído** (Exercicio01 a 05 resolvidos)
+- `startsWith()` / `endsWith()` / `contains()` — **em andamento** (Exercicio01 criado, aguardando solução)
 
 ## Prompt original do estudo
 
