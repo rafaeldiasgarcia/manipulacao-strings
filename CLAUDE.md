@@ -59,7 +59,8 @@ java -cp out exercicios.length.Exercicio01
 - `startsWith()` / `endsWith()` / `contains()` — **concluído**
 - `equals()` / `equalsIgnoreCase()` — **concluído**
 - `charAt()` — **concluído**
-- `indexOf()` / `lastIndexOf()` — **em andamento** (Exercicio01 criado, aguardando solução)
+- `indexOf()` / `lastIndexOf()` — **concluído**
+- `substring()` / `split()` — **próximo**
 
 ## Prompt original do estudo
 
