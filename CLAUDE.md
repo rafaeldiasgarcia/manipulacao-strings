@@ -6,6 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Repositório de estudo de manipulação de Strings em Java. O usuário resolve exercícios progressivos (5 por comando, do fácil ao desafio) e recebe revisão técnica a cada solução. Não há framework de testes — a validação é feita via `System.out.println` com `PASSOU` / `FALHOU` no próprio `main`.
 
+**Versão do Java:** Java 21 (sem usar features preview). Evitar sintaxes como *String Templates* (ex: `STR."..."` ou `StringTemplate`, e também `replaceAll(regex: ...)`). Usar `String` comum com escapes (ex: `"\\s+"`).
+
 ## Como rodar um exercício
 
 Projeto IntelliJ IDEA sem Maven/Gradle. Para rodar via terminal:
