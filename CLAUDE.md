@@ -28,7 +28,7 @@ java -cp out exercicios.length.Exercicio01
 **Estrutura de cada arquivo `.java`:**
 - Enunciado e restrições no Javadoc da classe
 - Um único método estático a ser implementado, com `// TODO` quando vazio
-- `main` com testes unitários cobrindo todos os cenários e edge cases (sem limite de quantidade) imprimindo `Teste N | Esperado: X | Obtido: Y | PASSOU/FALHOU` com cores no console, usando ANSI escape codes (`\u001B[32m` verde para "PASSOU" e `\u001B[31m` vermelho para "FALHOU").
+- `main` com testes unitários cobrindo todos os cenários e edge cases (sem limite fixo de quantidade, use o necessário para cobrir nulos, bordas, sucessos e exceções lógicas) imprimindo `Teste N | Esperado: X | Obtido: Y | PASSOU/FALHOU` com cores no console, usando ANSI escape codes (`\u001B[32m` verde para "PASSOU" e `\u001B[31m` vermelho para "FALHOU").
 
 **Progressão dos exercícios:** cada comando tem exatamente 5 exercícios em dificuldade crescente. O Exercicio05 é sempre o desafio final do comando.
 
@@ -61,7 +61,9 @@ java -cp out exercicios.length.Exercicio01
 - `charAt()` — **concluído**
 - `indexOf()` / `lastIndexOf()` — **concluído**
 - `substring()` / `split()` — **concluído**
-- `trim()` / `strip()` / `replace()` / `replaceAll()` / `toLowerCase()` / `toUpperCase()` — **próximo**
+- `trim()` / `strip()` — **concluído**
+- `replace()` / `replaceAll()` — **próximo**
+- `toLowerCase()` / `toUpperCase()` — **pendente**
 
 ## Prompt original do estudo
 
