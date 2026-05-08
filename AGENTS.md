@@ -63,7 +63,8 @@ java -cp out exercicios.length.Exercicio01
 - `replace()` / `replaceAll()` — **concluído**
 - `toLowerCase()` / `toUpperCase()` — **concluído**
 - `String.valueOf()` — **concluído**
-- `String.format()` — **próximo**
+- `String.format()` — **concluído**
+- `String.join()` — **próximo**
 
 ## Prompt original do estudo
 
