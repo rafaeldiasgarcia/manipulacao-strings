@@ -41,6 +41,21 @@ java -cp out exercicios.length.Exercicio01
 | 5 | Conversão e Formatação | `String.valueOf()`, `String.format()`, `String.join()` |
 | 6 | Alta Performance | `StringBuilder` |
 
+## Roadmap de StringBuilder
+
+| # | Grupo | Métodos / Conceitos |
+|---|-------|---------------------|
+| 1 | Criação e Conversão | `new StringBuilder()`, `new StringBuilder(int capacity)`, `new StringBuilder(String)`, `toString()` |
+| 2 | Construção de Texto | `append()` |
+| 3 | Inspeção e Busca | `length()`, `isEmpty()`, `charAt()`, `substring()`, `indexOf()`, `lastIndexOf()` |
+| 4 | Inserção | `insert()` |
+| 5 | Remoção | `delete()`, `deleteCharAt()` |
+| 6 | Alteração | `setCharAt()`, `replace()` |
+| 7 | Reordenação | `reverse()` |
+| 8 | Comparação (Atenção) | `compareTo()`; `equals()` compara referência/endereço, não conteúdo |
+| 9 | Capacidade e Performance | `capacity()`, `ensureCapacity()`, `trimToSize()`, `setLength()` |
+| 10 | Integração com Streams | `chars()`, `codePoints()` |
+
 ## Fluxo de mentoria (como conduzir a sessão)
 
 1. Criar `teoria/NN_comando.md` com teoria do comando (o que é, como funciona na memória, uso em produção, exemplo prático)
