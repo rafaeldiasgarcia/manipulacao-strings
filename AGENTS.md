@@ -64,7 +64,8 @@ java -cp out exercicios.length.Exercicio01
 - `toLowerCase()` / `toUpperCase()` — **concluído**
 - `String.valueOf()` — **concluído**
 - `String.format()` — **concluído**
-- `String.join()` — **próximo**
+- `String.join()` — **concluído**
+- `StringBuilder` — **próximo**
 
 ## Prompt original do estudo
 
