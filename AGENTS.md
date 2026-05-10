@@ -88,8 +88,9 @@ java -cp out exercicios.length.Exercicio01
 - `StringBuilder` — **em andamento**
   - Criação e Conversão — **concluído**
   - Construção de Texto (`append()`) — **concluído**
-  - Inspeção Básica (`length()`, `isEmpty()`) — **em andamento**; próximo exercício: `src/exercicios/stringBuilder/inspecao_basica/length_isempty/Exercicio01.java`
-  - Próxima sequência: `charAt()` → `substring()` → `indexOf()` / `lastIndexOf()` → `insert()` → `delete()` / `deleteCharAt()` → `setCharAt()` / `replace()` → `reverse()` → comparação → capacidade/performance → streams
+  - Inspeção Básica (`length()`, `isEmpty()`) — **concluído**
+  - Acesso por Índice (`charAt()`) — **em andamento**; próximo exercício: `src/exercicios/stringBuilder/acesso_indice/charat/Exercicio01.java`
+  - Próxima sequência: `substring()` → `indexOf()` / `lastIndexOf()` → `insert()` → `delete()` / `deleteCharAt()` → `setCharAt()` / `replace()` → `reverse()` → comparação → capacidade/performance → streams
 
 ## Prompt original do estudo
 
