@@ -83,6 +83,9 @@ java -cp out exercicios.length.Exercicio01
 - `String.format()` — **concluído**
 - `String.join()` — **concluído**
 - `StringBuilder` — **em andamento**
+  - Criação e Conversão — **concluído**
+  - Construção de Texto (`append()`) — **concluído**
+  - Inspeção e Busca (`length()`, `isEmpty()`, `charAt()`, `substring()`, `indexOf()`, `lastIndexOf()`) — **em andamento**; próximo exercício: `src/exercicios/stringBuilder/inspecao_busca/Exercicio01.java`
 
 ## Prompt original do estudo
 
