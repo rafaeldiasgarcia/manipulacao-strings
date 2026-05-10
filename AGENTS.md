@@ -1,6 +1,6 @@
 ## Sobre o projeto
 
-Repositório de estudo de manipulação de Strings em Java. O usuário resolve exercícios progressivos (5 por comando, do fácil ao desafio) e recebe revisão técnica a cada solução. Não há framework de testes — a validação é feita via `System.out.println` com `PASSOU` / `FALHOU` no próprio `main`.
+Repositório de estudo de manipulação de Strings em Java. O usuário resolve exercícios progressivos conforme a necessidade didática de cada comando/grupo e recebe revisão técnica a cada solução. Não há framework de testes — a validação é feita via `System.out.println` com `PASSOU` / `FALHOU` no próprio `main`.
 
 **Versão do Java:** Java 21 (sem usar features preview). Evitar sintaxes como *String Templates* (ex: `STR."..."` ou `StringTemplate`, e também `replaceAll(regex: ...)`). Usar `String` comum com escapes (ex: `"\\s+"`).
 
@@ -16,6 +16,8 @@ javac -d out src/exercicios/length/Exercicio01.java
 java -cp out exercicios.length.Exercicio01
 ```
 
+**Regra da mentoria:** o assistente não deve rodar compilação nem testes automaticamente após o usuário enviar uma solução. A revisão deve ser feita lendo o código. Só rodar comandos (`javac`, `java`, testes ou equivalentes) se o usuário pedir explicitamente ou enviar um erro/saída para investigar.
+
 ## Convenções do repositório
 
 **Nomenclatura de arquivos:**
@@ -28,7 +30,7 @@ java -cp out exercicios.length.Exercicio01
 - Um único método estático a ser implementado, com `// TODO` quando vazio
 - `main` com testes unitários cobrindo todos os cenários e edge cases (sem limite fixo de quantidade, use o necessário para cobrir nulos, bordas, sucessos e exceções lógicas) imprimindo `Teste N | Esperado: X | Obtido: Y | PASSOU/FALHOU` com cores no console, usando ANSI escape codes (`\u001B[32m` verde para "PASSOU" e `\u001B[31m` vermelho para "FALHOU").
 
-**Progressão dos exercícios:** cada comando tem exatamente 5 exercícios em dificuldade crescente. O Exercicio05 é sempre o desafio final do comando.
+**Progressão dos exercícios:** não há quantidade fixa por comando/grupo. Criar apenas a quantidade necessária para o usuário dominar o tema: se um conceito precisar de 1 exercício, fazer 1; se precisar de 30, fazer 30. A progressão deve ir do básico ao desafio somente enquanto houver ganho didático real, evitando exercícios repetitivos que testam o mesmo cenário.
 
 ## Roadmap de comandos
 
@@ -62,8 +64,8 @@ java -cp out exercicios.length.Exercicio01
 2. Criar `src/exercicios/comando/Exercicio01.java` com método `// TODO` e testes no `main`
 3. Aguardar o usuário implementar e enviar o código
 4. Revisar: apontar bugs, anti-padrões (ex: `condition ? true : false`, variável intermediária desnecessária) e sugerir forma mais idiomática
-5. Criar o próximo exercício e repetir até o Exercicio05
-6. Após o Exercicio05 aprovado, avançar para o próximo comando da lista
+5. Criar o próximo exercício apenas se ainda houver conceito, borda ou combinação relevante a praticar
+6. Quando o tema estiver suficientemente coberto, avançar para o próximo comando/grupo da lista
 
 ## Progresso atual
 
@@ -80,7 +82,7 @@ java -cp out exercicios.length.Exercicio01
 - `String.valueOf()` — **concluído**
 - `String.format()` — **concluído**
 - `String.join()` — **concluído**
-- `StringBuilder` — **próximo**
+- `StringBuilder` — **em andamento**
 
 ## Prompt original do estudo
 
