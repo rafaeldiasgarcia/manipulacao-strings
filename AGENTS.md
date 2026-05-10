@@ -49,14 +49,17 @@ java -cp out exercicios.length.Exercicio01
 |---|-------|---------------------|
 | 1 | Criação e Conversão | `new StringBuilder()`, `new StringBuilder(int capacity)`, `new StringBuilder(String)`, `toString()` |
 | 2 | Construção de Texto | `append()` |
-| 3 | Inspeção e Busca | `length()`, `isEmpty()`, `charAt()`, `substring()`, `indexOf()`, `lastIndexOf()` |
-| 4 | Inserção | `insert()` |
-| 5 | Remoção | `delete()`, `deleteCharAt()` |
-| 6 | Alteração | `setCharAt()`, `replace()` |
-| 7 | Reordenação | `reverse()` |
-| 8 | Comparação (Atenção) | `compareTo()`; `equals()` compara referência/endereço, não conteúdo |
-| 9 | Capacidade e Performance | `capacity()`, `ensureCapacity()`, `trimToSize()`, `setLength()` |
-| 10 | Integração com Streams | `chars()`, `codePoints()` |
+| 3 | Inspeção Básica | `length()`, `isEmpty()` |
+| 4 | Acesso por Índice | `charAt()` |
+| 5 | Extração de Trechos | `substring()` |
+| 6 | Busca de Texto | `indexOf()`, `lastIndexOf()` |
+| 7 | Inserção | `insert()` |
+| 8 | Remoção | `delete()`, `deleteCharAt()` |
+| 9 | Alteração | `setCharAt()`, `replace()` |
+| 10 | Reordenação | `reverse()` |
+| 11 | Comparação (Atenção) | `compareTo()`; `equals()` compara referência/endereço, não conteúdo |
+| 12 | Capacidade e Performance | `capacity()`, `ensureCapacity()`, `trimToSize()`, `setLength()` |
+| 13 | Integração com Streams | `chars()`, `codePoints()` |
 
 ## Fluxo de mentoria (como conduzir a sessão)
 
@@ -85,7 +88,8 @@ java -cp out exercicios.length.Exercicio01
 - `StringBuilder` — **em andamento**
   - Criação e Conversão — **concluído**
   - Construção de Texto (`append()`) — **concluído**
-  - Inspeção e Busca (`length()`, `isEmpty()`, `charAt()`, `substring()`, `indexOf()`, `lastIndexOf()`) — **em andamento**; próximo exercício: `src/exercicios/stringBuilder/inspecao_busca/Exercicio01.java`
+  - Inspeção Básica (`length()`, `isEmpty()`) — **em andamento**; próximo exercício: `src/exercicios/stringBuilder/inspecao_basica/length_isempty/Exercicio01.java`
+  - Próxima sequência: `charAt()` → `substring()` → `indexOf()` / `lastIndexOf()` → `insert()` → `delete()` / `deleteCharAt()` → `setCharAt()` / `replace()` → `reverse()` → comparação → capacidade/performance → streams
 
 ## Prompt original do estudo
 

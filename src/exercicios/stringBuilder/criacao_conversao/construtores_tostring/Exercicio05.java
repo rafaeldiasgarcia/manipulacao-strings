@@ -1,4 +1,4 @@
-package exercicios.stringBuilder.criacao_conversao;
+package exercicios.stringBuilder.criacao_conversao.construtores_tostring;
 
 /**
  * Exercicio 05 - Normalizando texto antes de criar o builder

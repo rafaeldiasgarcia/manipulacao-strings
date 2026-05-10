@@ -1,4 +1,4 @@
-package exercicios.stringBuilder.inspecao_busca;
+package exercicios.stringBuilder.inspecao_basica.length_isempty;
 
 /**
  * Exercicio 01 - Verificando se o builder esta vazio
@@ -27,8 +27,15 @@ package exercicios.stringBuilder.inspecao_busca;
 public class Exercicio01 {
 
     public static String descreverConteudo(String texto) {
-        // TODO: implemente aqui
-        return null;
+
+        String textoNormalizado = texto == null ? "" : texto;
+        StringBuilder builder = new StringBuilder(textoNormalizado);
+
+        if (builder.isEmpty()) {
+            return "vazio";
+        }
+
+        return "tamanho: " + builder.length();
     }
 
     private static void imprimirTeste(int numero, String esperado, String obtido) {

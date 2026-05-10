@@ -1,4 +1,4 @@
-package exercicios.stringBuilder.criacao_conversao;
+package exercicios.stringBuilder.criacao_conversao.construtores_tostring;
 
 /**
  * Exercicio 02 - Criando um builder vazio

@@ -1,4 +1,4 @@
-package exercicios.stringBuilder.append;
+package exercicios.stringBuilder.construcao_texto.append;
 
 /**
  * Exercicio 02 - Montando resumo com tipos diferentes

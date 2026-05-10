@@ -1,4 +1,4 @@
-package exercicios.stringBuilder.append;
+package exercicios.stringBuilder.construcao_texto.append;
 
 /**
  * Exercicio 04 - Repetindo texto com append

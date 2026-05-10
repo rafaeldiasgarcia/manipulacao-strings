@@ -1,4 +1,4 @@
-package exercicios.stringBuilder.append;
+package exercicios.stringBuilder.construcao_texto.append;
 
 /**
  * Exercicio 01 - Saudacao simples com append
